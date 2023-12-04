@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav  class="navbar py-3 navbar-expand-lg sticky-top">
+            <div class="container-fluid fw-bold px-5">
+                <a class="py-0 navbar-brand order-0 me-auto me-lg-4 align-self-center" href="homepage.html"><img style="width: 130px; height: 50px;" src="assets/assets/netflix_logo.png" alt="page logo"></a>
+                <button class="navbar-toggler order-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TV Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Movies</a>
+                        </li>
+                          
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Recently Added</a>
+                        </li>
+                  
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My list</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fs-2 py-0 navbar order-1 ms-auto">
+                    <i class="bi bi-search me-lg-3"></i>
+                </div>
+                <div class="fs-4 py-0 navbar order-2">
+                    <img src="assets/assets/kids_icon.png" style="width: 50px; height: 50px;" alt="pfp">
+                <div class="fs-2 py-0 navbar order-3   mx-lg-3">
+                    <i class=" bi bi-bell-fill"></i>
+                </div>
+                <div class="navbar py-0 order-4 ms-2 me-lg-0">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/assets/avatar.png" style="width: 50px; height: 50px;" alt="pfp">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">History</a></li>
+                        <li><a class="dropdown-item" href="#">Notifications</a></li>
+                        <li><a class="dropdown-item" href="profilePage.html">Edit Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="settingsPage.html">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container d-grid">
+        <h1 class="my-5 pt-3">Account</h1>
+        <section class="row border border-start-0 border-end-0">
+            <div class="col-4">
+                <h4 class="h3 my-3 opacity-25">MEMBERSHIP & BILLING</h4>
+                <button type="button" class="bg-secondary-subtle px-5 py-2 border-bottom">Cancel Menbership</button>
+            </div>
+            <div class="col-8 pe-0">
+                <div class="py-3">
+                    <p class="fw-bold d-flex justify-content-between">student@strive.school<a class="fw-bold text-decoration-none text-primary" href="#">Change account email</a></p>
+                    <p class="text-white-50 d-flex justify-content-between">Password: ************* <a class="fw-bold text-decoration-none text-primary" href="#">Change password</a></p>
+                    <p class="text-white-50 d-flex justify-content-between  ">Phone: 321 044 1279 <a class="fw-bold  text-decoration-none text-primary" href="#">Change phone number</a></p>
+                </div>
+                <div class="py-3 border-top border-bottom">
+                    <p class="fw-bold d-flex justify-content-between"><span><i class="bi bi-paypal me-2">Paypal</i> admin@strive.school </span><a class="fw-bold text-decoration-none text-primary" href="#">Update payment info</a></p>
+                    <a  class="text-end d-block fw-bold text-decoration-none text-primary" href="#">Billing details</a>
+                </div>
+                <a  class="text-end d-block fw-bold text-decoration-none text-primary mt-3" href="#">Redeem gift card or promo code</a>
+                <a  class="text-end d-block fw-bold text-decoration-none text-primary mb-3" href="#">Where to buy gift cards</a>
+            </div>
+        </section>
+        <section class="row ">
+            <div class="col-4">
+                <h4 class="h3 opacity-25">PLAN DETAILS</h4>
+            </div>
+            <div class="col pe-0">
+                <p class="fw-bold d-flex justify-content-between align-items-center"><span>Premium <i class="bi bi-badge-4k fs-3 me-2"></i></span><a class="fw-bold text-decoration-none text-primary" href="#"> Change plan</a></p>
+            </div>
+        </section>
+        <section class="row border-top py-3">
+            <div class="col-4">
+                <h4 class="h3 opacity-25 align-content-center">MY PROFILE</h4>
+            </div>
+            <div class="col">
+                <a class="fw-bold text-decoration-none text-primary d-block" href="#">Parental controls</a>
+                <a class="fw-bold text-decoration-none text-primary d-block" href="#">Test participation</a>
+                <a class="fw-bold text-decoration-none text-primary d-block" href="#">Manage download devices</a>
+                <a class="fw-bold text-decoration-none text-primary d-block" href="#">Activate a device</a>
+                <a class="fw-bold text-decoration-none text-primary d-block" href="#">Recent device streaming activity</a>
+                <a class="fw-bold text-decoration-none text-primary d-block" href="#">Sign out of all devices</a>
+            </div>
+        </section>
+        <section class="row border-top py-3">
+            <div class="col-4">
+                <h4 class="h3 opacity-25">SETTINGS</h4>
+            </div>
+            <div class="col pe-0">
+                <p class="fw-bold d-flex justify-content-between">
+                    <span><img style="width: 50px; height: 50px; margin-right: 10px;" src="assets/assets/avatar.png" alt="pfp">Strive Student</span>
+                    <span>
+                        <a class="fw-bold text-decoration-none text-primary" href="#">Manage profiles</a>
+                        <a class="fw-bold text-decoration-none text-primary d-block" href="#">Add profile email</a>
+                    </span>
+                </p>
+                
+                <div class="row">
+                    <div class="col-6">
+                        <a class="fw-bold text-decoration-none text-primary d-block" href="#">Language</a>
+                    </div>
+                    <div class="col-6">
+                        <a class="fw-bold text-decoration-none text-primary d-block" href="#">Viewing activity</a>
+                    </div>
+                    <div class="col-6">
+                        <a class="fw-bold text-decoration-none text-primary d-block" href="#">Playback settings</a>
+                    </div>
+                    <div class="col-6">
+                        <a class="fw-bold text-decoration-none text-primary d-block" href="#">Ratings</a>
+                    </div>
+                    <div class="col-6">
+                        <a class="fw-bold text-decoration-none text-primary d-block" href="#">Subtitle appearance</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>

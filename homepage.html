@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav  class="navbar py-3 navbar-expand-lg sticky-top">
+            <div class="container-fluid fw-bold px-5">
+                <a class="py-0 navbar-brand order-0 me-auto me-lg-4 align-self-center" href="#"><img style="width: 130px; height: 50px; margin-left: -12px;" src="assets/assets/netflix_logo.png" alt="page logo"></a>
+                <button class="navbar-toggler order-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">TV Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Movies</a>
+                        </li>
+                          
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Recently Added</a>
+                        </li>
+                  
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My list</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fs-2 py-0 navbar order-1 ms-auto">
+                    <i class="bi bi-search me-lg-3"></i>
+                </div>
+                <div class="fs-4 py-0 navbar order-2">
+                    <img src="assets/assets/kids_icon.png" style="width: 50px; height: 50px;" alt="pfp">
+                <div class="fs-2 py-0 navbar order-3   mx-lg-3">
+                    <i class=" bi bi-bell-fill"></i>
+                </div>
+                <div class="navbar py-0 order-4 ms-2 me-lg-0">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/assets/avatar.png" style="width: 50px; height: 50px;" alt="pfp">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">History</a></li>
+                        <li><a class="dropdown-item" href="#">Notifications</a></li>
+                        <li><a class="dropdown-item" href="profilePage.html">Edit Profile</a></li>
+                        <li><a class="dropdown-item" href="settingsPage.html">Settings</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="settingsPage.html">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="d-grid px-5 pt-3">
+        <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between">
+                <h1 class="fw-bolder m-0">TV Shows</h1>
+                <div class="border border-3 bg-black px-3 dropdown-toggle ms-5 h-auto"><h3 class="fs-4 m-0 pt-1 pe-4 pb-0 d-inline-block">Genres</h3></div>
+            </div>
+
+            <div class="text-end fs-3">
+                <i class="fs-5 bi bi-text-left py-1 px-3 border border-2 active text-white-50"></i><i class="fs-5 bi bi-grid-fill py-1 px-3 border border-2 text-white-50"></i>
+            </div>
+        </div>
+        <h2 class="mt-5 mb-3">Trending Now</h2>
+        <div id="carousel1" class="carousel slide carousel-fade d-md-none" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/assets/media/media0.webp"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media1.jpg"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media2.webp"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media3.webp"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media4.jpg"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media5.webp"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media6.jpg"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media7.webp"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media8.webp"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media9.jpg"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media10.jpg"  alt="tv show image">
+                </div>
+            </div>
+            <button class="bg-dark-subtle bg-opacity-50 carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="bg-dark-subtle bg-opacity-50 carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+        </div>
+        <div id="carousel1md" class="carousel slide carousel-fade d-none d-md-grid d-xl-none" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-cols-md-4">
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media0.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media1.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media2.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media3.webp"  alt="tv show image">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-md-4">
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media3.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media4.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media5.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media6.jpg"  alt="tv show image">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-md-4">
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media6.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media7.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media8.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media9.jpg"  alt="tv show image">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-md-4">
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media9.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media10.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media0.webp"  alt="tv show image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="bg-dark-subtle bg-opacity-50 carousel-control-prev" type="button" data-bs-target="#carousel1md" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="bg-dark-subtle bg-opacity-50 carousel-control-next" type="button" data-bs-target="#carousel1md" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div id="carousel1xl" class="carousel slide carousel-fade d-none d-xl-grid" data-bs-ride="carousel">
+            <div class="carousel-item active">
+                <div class="row row-cols-xl-6 g-1">
+                    <div class="col">
+                        <img class="w-100" src="assets/assets/media/media0.webp"  alt="tv show image">
+                    </div>
+                    <div class="col">
+                        <img class="w-100" src="assets/assets/media/media1.jpg"  alt="tv show image">
+                    </div>
+                    <div class="col">
+                        <img class="w-100" src="assets/assets/media/media2.webp"  alt="tv show image">
+                    </div>
+                    <div class="col">
+                        <img class="w-100" src="assets/assets/media/media3.webp"  alt="tv show image">
+                    </div>
+                    <div class="col">
+                        <img class="w-100" src="assets/assets/media/media4.jpg"  alt="tv show image">
+                    </div>
+                    <div class="col">
+                        <img class="w-100" src="assets/assets/media/media5.webp"  alt="tv show image">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row row-cols-xl-6 g-1">
+                    <div class="col">
+                        <img class="w-100" src="assets/assets/media/media6.jpg"  alt="tv show image">
+                    </div>
+                    <div class="col">
+                        <img class="w-100" src="assets/assets/media/media7.webp"  alt="tv show image">
+                    </div>
+                    <div class="col">
+                        <img class="w-100" src="assets/assets/media/media8.webp"  alt="tv show image">
+                    </div>
+                    <div class="col">
+                        <img class="w-100" src="assets/assets/media/media9.jpg"  alt="tv show image">
+                    </div>
+                    <div class="col">
+                        <img class="w-100" src="assets/assets/media/media10.jpg"  alt="tv show image">
+                    </div>
+                    <div class="col">
+                        <img class="w-100" src="assets/assets/media/media0.webp"  alt="tv show image">
+                    </div>
+                </div>
+            </div>
+            <button class="bg-dark-subtle bg-opacity-50 carousel-control-prev" type="button" data-bs-target="#carousel1xl" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="bg-dark-subtle bg-opacity-50 carousel-control-next" type="button" data-bs-target="#carousel1xl" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <h2 class="mt-5 mb-3">Watch It Again</h2>
+        <div id="carousel2" class="carousel slide carousel-fade d-md-none" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/assets/media/media11.jpg"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media12.jpg"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media13.jpg"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media14.webp"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media15.jpg"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media16.webp"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media17.jpg"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media18.jpg"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media19.webp"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media20.jpg"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media21.webp"  alt="tv show image">
+                </div>
+            </div>
+            <button class="bg-dark-subtle bg-opacity-50 carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="bg-dark-subtle bg-opacity-50 carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+        </div>
+        <div id="carousel2md" class="carousel slide carousel-fade d-none d-md-grid d-xl-none" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-cols-md-4">
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media11.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media12.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media13.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media14.webp"  alt="tv show image">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-md-4 d-xl-none" data-bs-ride="carousel">
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media14.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media15.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media16.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media17.jpg"  alt="tv show image">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-md-4 d-xl-none">
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media17.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media18.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media19.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media20.jpg"  alt="tv show image">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-md-4 d-xl-none">
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media20.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media21.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media11.jpg"  alt="tv show image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="bg-dark-subtle bg-opacity-50 carousel-control-prev" type="button" data-bs-target="#carousel2md" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="bg-dark-subtle bg-opacity-50 carousel-control-next" type="button" data-bs-target="#carousel2md" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div id="carousel2xl" class="carousel slide carousel-fade d-none d-xl-grid" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-cols-xl-6 g-1">
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media11.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media12.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media13.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media14.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media15.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media16.webp"  alt="tv show image">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-xl-6 g-1">
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media17.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media18.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media19.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media20.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media21.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media11.jpg"  alt="tv show image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="bg-dark-subtle bg-opacity-50 carousel-control-prev" type="button" data-bs-target="#carousel2xl" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="bg-dark-subtle bg-opacity-50 carousel-control-next" type="button" data-bs-target="#carousel2xl" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <h2 class="mt-5 mb-3">New Releases</h2>
+        <div id="carousel3" class="carousel slide carousel-fade d-md-none" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/assets/media/media22.webp"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media23.webp"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media24.jpg"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media25.webp"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media26.webp"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media27.jpg"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media28.jpg"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media29.jpg"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media30.jpg"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media31.webp"  alt="tv show image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/assets/media/media32.jpg"  alt="tv show image">
+                </div>
+            </div>
+            <button class="bg-dark-subtle bg-opacity-50 carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="bg-dark-subtle bg-opacity-50 carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+        </div>
+        <div id="carousel3md" class="carousel slide carousel-fade d-none d-md-grid d-xl-none" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-cols-md-4">
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media22.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media23.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media24.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media25.webp"  alt="tv show image">
+                        </div>
+                    </div>
+                </div> 
+                <div class="carousel-item">
+                    <div class="row row-cols-md-4">
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media25.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media26.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media27.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media28.jpg"  alt="tv show image">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-md-4">
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media28.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media29.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media30.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media31.webp"  alt="tv show image">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-md-4">
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media31.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media32.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media22.webp"  alt="tv show image">
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <button class="bg-dark-subtle bg-opacity-50 carousel-control-prev" type="button" data-bs-target="#carousel3md" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="bg-dark-subtle bg-opacity-50 carousel-control-next" type="button" data-bs-target="#carousel3md" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+        </div>
+        <div id="carousel3xl" class="carousel slide carousel-fade d-none d-xl-grid" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-cols-xl-6 g-1">
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media22.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media23.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media24.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media25.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media26.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media27.jpg"  alt="tv show image">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-xl-6 g-1">
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media28.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media29.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media30.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media31.webp"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media32.jpg"  alt="tv show image">
+                        </div>
+                        <div class="col">
+                            <img class="w-100" src="assets/assets/media/media22.webp"  alt="tv show image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="bg-dark-subtle bg-opacity-50 carousel-control-prev" type="button" data-bs-target="#carousel3xl" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="bg-dark-subtle bg-opacity-50 carousel-control-next" type="button" data-bs-target="#carousel3xl" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+    <footer class="mt-5 container text-white-50">
+        <div class="mb-5">
+            <i class="bi bi-facebook fs-1 me-5"></i><i class="bi bi-instagram fs-1 me-5"></i><i class="bi bi-twitter fs-1 me-5"></i><i class="bi bi-youtube fs-1 me-5"></i>
+        </div>
+        <div class="d-grid align-content-between flex-wrap text-capitalize">
+            <div class="row row-cols-4">
+                <p class="col">Audio and Subtitles</p>
+                <p class="col">Audio description</p>
+                <p class="col">help center</p>
+                <p class="col">gift cards</p>
+                <p class="col">media center</p>
+                <p class="col">investor relations</p>
+                <p class="col">jobs</p>
+                <p class="col">terms of use</p>
+                <p class="col">privacy</p>
+                <p class="col">legal notices</p>
+                <p class="col">cookie preferences</p>
+                <p class="col">corporate information</p>
+                <p class="col">contact us</p>
+            </div>
+        </div>
+        <button type="button" class="btn btn-outline-secondary my-3">Service Code</button>
+        <p>&copy; 1997-2019 Netflix, inc. (i-0d00fcda2fdf9cc0de)</p>
+        
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
